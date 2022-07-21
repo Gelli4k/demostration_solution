@@ -34,4 +34,4 @@ class TestGenreService:
     @pytest.fixture(autouse=True)
     def test_delete(self):
         res = self.genre_service.delete(1)
-        assert res is not None
+        assert res is None

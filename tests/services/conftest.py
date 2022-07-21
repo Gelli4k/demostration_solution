@@ -26,7 +26,7 @@ def director_dao():
 
     return director_dao
 
-
+@pytest.fixture()
 def genre_dao():
     genre_dao = GenreDAO(None)
 
@@ -42,7 +42,7 @@ def genre_dao():
 
     return genre_dao
 
-
+@pytest.fixture()
 def movie_dao():
     movie_dao = MovieDAO(None)
 
